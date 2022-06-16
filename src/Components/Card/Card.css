@@ -1,0 +1,59 @@
+.product-card{
+    max-width: 300px;
+width: 100%;
+    box-shadow: 0 5px 10px rgb(0,0,0,0.5);
+    border-radius: 25px;
+    padding: 20px 30px 30px 30px;
+    background: rgb(235, 232, 232);
+}
+.product-card .logo-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-card .logo-card img{
+height: 60px;
+width: 60px;
+object-fit: cover;
+}
+.product-card .logo-card i{
+    font-size: 27px;
+    color: #707070;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.product-card .logo-card i:hover{
+    color: #333;
+}
+.product-card  .main-images img{
+    width: 200px;
+    height: 200px;
+    
+    transform: rotate(-18deg);
+
+
+}
+.product-card .shoe-details{
+    font-size: 14px;
+
+}
+.product-card .color-price .color{
+font-size: 18px;
+font-weight: 500;
+color:#333;
+margin-right: 8px;
+    
+}
+.color-option .circles{
+    display: flex;
+  
+}
+.color-option .circles .circle{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin: 0 4px;
+    background: #0071c7;
+    cursor: pointer;
+
+}

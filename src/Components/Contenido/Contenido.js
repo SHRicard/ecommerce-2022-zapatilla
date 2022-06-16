@@ -2,7 +2,7 @@ import React from "react";
 import Addidas from "../img/addidas.jpg";
 import Topper from "../img/topper.jpg";
 import Topper2 from "../img/topper2.jpg";
-import CardsOfertas from "../CardsOferta/CardsOfertas.js";
+import Card from "../Card/Card.js";
 
 import "./Contenido.css";
 
@@ -80,7 +80,7 @@ const Contenido = () => {
         </small>
       </div>
 
-      <CardsOfertas />
+      <Card />
     </div>
   );
 };
