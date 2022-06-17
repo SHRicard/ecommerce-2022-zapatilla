@@ -1,5 +1,5 @@
 import React from "react";
-import running from "../img/running.png";
+import running from "../../util/img/Logo/running.png";
 import "./Menu.css";
 const Menu = () => {
   return (

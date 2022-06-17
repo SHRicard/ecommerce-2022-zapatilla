@@ -1,8 +1,8 @@
 import React from "react";
-import Addidas from "../img/addidas.jpg";
-import Topper from "../img/topper.jpg";
-import Topper2 from "../img/topper2.jpg";
-import Card from "../Card/Card.js";
+import Fila from "../../util/img/Carrusel/Fila.jpg";
+import Topper from "../../util/img/Carrusel/topper.jpg";
+import Topper2 from "../../util/img/Carrusel/topper2.jpg";
+import Catalogo from "../Catalogo/Catalogo.js";
 
 import "./Contenido.css";
 
@@ -39,7 +39,7 @@ const Contenido = () => {
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src={Addidas} className="d-block w-100" alt="..." />
+              <img src={Fila} className="d-block w-100" alt="..." />
             </div>
             <div className="carousel-item">
               <img src={Topper} className="d-block w-100 " alt="..." />
@@ -80,7 +80,7 @@ const Contenido = () => {
         </small>
       </div>
 
-      <Card />
+      <Catalogo />
     </div>
   );
 };

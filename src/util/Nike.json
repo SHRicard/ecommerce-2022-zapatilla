@@ -1,0 +1,25 @@
+[
+  {
+    "id": "1",
+    "marca": "Nike",
+    "modelo": "Vapormax",
+    "color": "Blanco - Negro",
+    "description": "Capellada cerrada de tela con refuerzo en talon y punta, suela inyectada",
+    "img": [
+      {
+        "id": "1",
+        "imagen": "img/Nike/blancaN.png"
+      },
+      { "id": "2", "imagen": "img/Nike/blancaB.png" },
+      {
+        "id": "3",
+        "imagen": "img/Nike/negraB.png"
+      },
+      {
+        "id": "4",
+        "imagen": "img/Nike/negraN.png"
+      }
+    ],
+    "precio": "$ 5.300"
+  }
+]
