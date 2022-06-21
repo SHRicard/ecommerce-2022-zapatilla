@@ -1,5 +1,4 @@
 import React from "react";
-import Nike from "../../util/img/Logo/Nike.png";
 
 import "./CardNovedades.css";
 
@@ -8,7 +7,7 @@ const CardNovedades = ({ props }) => {
     <div>
       <div className="product-card">
         <div className="logo-card">
-          <img src={Nike} alt="NikeLogo" />
+          <img src={props.logo} alt="NikeLogo" />
           <i class="bi bi-bag-heart"></i>
         </div>
         <div className="main-images">
@@ -34,16 +33,14 @@ const CardNovedades = ({ props }) => {
           </div>
         </div>
         <div className="color-price">
-          <div className="color-option">
-            <span className="color">Color:</span>
-            <div className="circles">
-              <span className="circle blancoNegro active"></span>
-              <span className="circle negroBlanco"></span>
-            </div>
+          <div>
+            <small className="text-Anton text-white ">{props.color}</small>
           </div>
           <div className="price">
-            <span className="price_num">{props.precio}</span>
-            <span className="price_letter">Nine dollar only</span>
+            <span className="text-Anton text-white ">{props.precio}</span>
+            <span className="text-Anton text-black price_letter">
+              Peso Argentino
+            </span>
           </div>
         </div>
         <div className=" d-grid gap-2 col-6 mx-auto pt-3">

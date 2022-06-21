@@ -9,7 +9,8 @@ import CardNovedades from "../CardNovedades/CardNovedades.js";
 import CardsOfertas from "../CardsOferta/CardsOfertas.js";
 //end componentes///
 ///start Json///
-import NikeJson from "../../util/Nike.json";
+import NovedadesJson from "../../util/Novedades.json";
+import OfertasJson from "../../util/Ofertas.json";
 ///end Json///
 import "./Contenido.css";
 
@@ -89,10 +90,10 @@ const Contenido = () => {
           <small className="text-black text-Anton fs-2  text-center">
             Novedades
           </small>
-          {NikeJson.map((Nike) => {
+          {NovedadesJson.map((Novedades) => {
             return (
               <div className="col-auto pb-3 d-flex justify-content-center">
-                <CardNovedades key={Nike.id} props={Nike} />
+                <CardNovedades key={Novedades.id} props={Novedades} />
               </div>
             );
           })}
@@ -103,10 +104,10 @@ const Contenido = () => {
           <small className="text-black text-Anton fs-2  text-center">
             Descuentos Imperdibles
           </small>
-          {NikeJson.map((Nike) => {
+          {OfertasJson.map((oferta) => {
             return (
               <div className="col-auto pb-3 d-flex justify-content-center">
-                <CardsOfertas key={Nike.id} props={Nike} />
+                <CardsOfertas key={oferta.id} props={oferta} />
               </div>
             );
           })}

@@ -8,7 +8,7 @@ const CardsOfertas = ({ props }) => {
     <div>
       <div className="product-card">
         <div className="logo-card">
-          <img src={Nike} alt="NikeLogo" />
+          <img src={props.logo} alt="NikeLogo" />
           <i class="bi bi-bag-heart"></i>
         </div>
         <div className="main-images">

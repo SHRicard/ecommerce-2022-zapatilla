@@ -1,0 +1,46 @@
+[
+  {
+    "novedades": {
+      "id": "1",
+      "marca": "Nike",
+      "logo": "img/Logo/Nike.png",
+      "modelo": "Vapormax",
+      "color": "Blanco - Negro",
+      "description": "Capellada cerrada de tela con refuerzo en talon y punta, suela inyectada",
+      "precio": "$ 5.300",
+      "img": {
+        "colorPrincipal": "rgb(255, 255, 255) , rgb(0, 0, 0)",
+        "foto": {
+          "frente": "img/Nike/negraB.png",
+          "costado": "#",
+          "arriba": "#"
+        }
+      }
+    },
+
+    "ofertas": {
+      "Gaelle": {
+        "id": "1",
+        "marca": "Gaelle",
+        "modelo": "2540 Women",
+        "color": "Verde",
+        "talles": [35, 36, 37, 38, 39, 40],
+
+        "description": "Capellada cerrada con abrojo refozado de tela con refuerzo con suela de Goma",
+        "img": [{ "id": "3", "foto": "img/Gaelle/2540w/verdeCostado.png" }],
+        "precio": "$ 3.500"
+      },
+      "Jaguar": {
+        "id": "1",
+        "marca": "Jaguar",
+        "modelo": "Panchas 7216",
+        "color": "Negro-Rojo , Negro-Rosa",
+        "talles": [36, 37, 38, 39, 40],
+        "description": "Zapatilla confeccionada en poliéster, fácil de calzar gracias a no tener cordones ",
+        "img": [{ "id": "1", "foto": "img/Jaguar/NegroRosa.png" }],
+        "precio": "$ 3.500"
+      }
+    },
+    "Catalogo": {}
+  }
+]
