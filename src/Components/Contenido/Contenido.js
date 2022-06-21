@@ -1,86 +1,119 @@
 import React from "react";
+/// start img ///
 import Fila from "../../util/img/Carrusel/Fila.jpg";
 import Topper from "../../util/img/Carrusel/topper.jpg";
 import Topper2 from "../../util/img/Carrusel/topper2.jpg";
-import Catalogo from "../Catalogo/Catalogo.js";
-
+///end img
+//start componentes//
+import CardNovedades from "../CardNovedades/CardNovedades.js";
+import CardsOfertas from "../CardsOferta/CardsOfertas.js";
+//end componentes///
+///start Json///
+import NikeJson from "../../util/Nike.json";
+///end Json///
 import "./Contenido.css";
 
 const Contenido = () => {
   return (
-    <div className="row">
-      <div className="col-md-12">
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div className="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              className="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img src={Fila} className="d-block w-100" alt="..." />
-            </div>
-            <div className="carousel-item">
-              <img src={Topper} className="d-block w-100 " alt="..." />
-            </div>
-            <div className="carousel-item">
-              <img src={Topper2} className="d-block w-100 " alt="..." />
-            </div>
-          </div>
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
+    <div className="container-fluid">
+      <div className="row">
+        {/* /////start carrusel//// */}
+        <div className="col-md-12">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
           >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Next</span>
-          </button>
+            <div className="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                className="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <img src={Fila} className="d-block w-100" alt="..." />
+              </div>
+              <div className="carousel-item">
+                <img src={Topper} className="d-block w-100 " alt="..." />
+              </div>
+              <div className="carousel-item">
+                <img src={Topper2} className="d-block w-100 " alt="..." />
+              </div>
+            </div>
+            <button
+              className="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                className="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button
+              className="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                className="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span className="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
-      </div>
-      <div className="col-12 text-center p-3">
-        <small className="text-muted text-Anton fs-4 ">
-          Descuentos Imperdibles
-        </small>
-      </div>
+        {/* ////end carousel/// */}
+        {/* ////start cards Novedades/// */}
+        <div className="row d-flex justify-content-center">
+          <small className="text-black text-Anton fs-2  text-center">
+            Novedades
+          </small>
+          {NikeJson.map((Nike) => {
+            return (
+              <div className="col-auto pb-3 d-flex justify-content-center">
+                <CardNovedades key={Nike.id} props={Nike} />
+              </div>
+            );
+          })}
+        </div>
+        {/* ///end cards Novedades/// */}
+        {/* ///start cards Oferta/// */}
+        <div className="row d-flex justify-content-center">
+          <small className="text-black text-Anton fs-2  text-center">
+            Descuentos Imperdibles
+          </small>
+          {NikeJson.map((Nike) => {
+            return (
+              <div className="col-auto pb-3 d-flex justify-content-center">
+                <CardsOfertas key={Nike.id} props={Nike} />
+              </div>
+            );
+          })}
+        </div>
 
-      <Catalogo />
+        {/* ///end cards Oferta/// */}
+      </div>
     </div>
   );
 };

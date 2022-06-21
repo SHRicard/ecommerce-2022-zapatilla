@@ -5,21 +5,25 @@
     "modelo": "Vapormax",
     "color": "Blanco - Negro",
     "description": "Capellada cerrada de tela con refuerzo en talon y punta, suela inyectada",
-    "img": [
-      {
-        "id": "1",
-        "imagen": "img/Nike/blancaN.png"
-      },
-      { "id": "2", "imagen": "img/Nike/blancaB.png" },
-      {
-        "id": "3",
-        "imagen": "img/Nike/negraB.png"
-      },
-      {
-        "id": "4",
-        "imagen": "img/Nike/negraN.png"
-      }
-    ],
+    "img": [{ "id": "3", "foto": "img/Nike/negraB.png" }],
+    "precio": "$ 5.300"
+  },
+  {
+    "id": "2",
+    "marca": "Nike",
+    "modelo": "Vapormax",
+    "color": "Blanco - Blanca",
+    "description": "Capellada cerrada de tela con refuerzo en talon y punta, suela inyectada",
+    "img": [{ "id": "1", "foto": "img/Nike/blancaB.png" }],
+    "precio": "$ 5.300"
+  },
+  {
+    "id": "3",
+    "marca": "Nike",
+    "modelo": "Vapormax",
+    "color": "Negro - Blanco",
+    "description": "Capellada cerrada de tela con refuerzo en talon y punta, suela inyectada",
+    "img": [{ "id": "2", "foto": "img/Nike/blancaN.png" }],
     "precio": "$ 5.300"
   }
 ]
