@@ -15,7 +15,7 @@ const CardNovedades = ({ props }) => {
           {props.img.map((foto) => {
             return <img key={foto.id} src={foto.foto} alt="NikeLogo" />;
           })}
-          {console.log(props.img)}
+
           {/* ///////////////////////// */}
         </div>
         <div>

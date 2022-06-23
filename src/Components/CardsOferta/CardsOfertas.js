@@ -16,7 +16,7 @@ const CardsOfertas = ({ props }) => {
           {props.img.map((foto) => {
             return <img key={foto.id} src={foto.foto} alt="NikeLogo" />;
           })}
-          {console.log(props.img)}
+
           {/* ///////////////////////// */}
         </div>
         <div>
@@ -28,22 +28,20 @@ const CardsOfertas = ({ props }) => {
           <div className="stars">
             <i className="bi bi-star-fill"></i>
             <i className="bi bi-star-fill"></i>
-            <i className="bi bi-star-fill"></i>
-            <i className="bi bi-star-fill"></i>
             <i className="bi bi-star-half"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
           </div>
         </div>
         <div className="color-price">
-          <div className="color-option">
-            <span className="color">Color:</span>
-            <div className="circles">
-              <span className="circle blancoNegro active"></span>
-              <span className="circle negroBlanco"></span>
-            </div>
+          <div>
+            <small className="text-Anton text-white ">{props.color}</small>
           </div>
           <div className="price">
-            <span className="price_num">{props.precio}</span>
-            <span className="price_letter">Nine dollar only</span>
+            <span className="text-Anton text-white ">{props.precio}</span>
+            <span className="text-Anton text-black price_letter">
+              Peso Argentino
+            </span>
           </div>
         </div>
         <div className=" d-grid gap-2 col-6 mx-auto pt-3">

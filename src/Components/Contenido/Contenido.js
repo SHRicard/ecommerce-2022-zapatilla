@@ -7,6 +7,7 @@ import Topper2 from "../../util/img/Carrusel/topper2.jpg";
 //start componentes//
 import CardNovedades from "../CardNovedades/CardNovedades.js";
 import CardsOfertas from "../CardsOferta/CardsOfertas.js";
+import CaruselOferta from "../CaruselOferta/CaruselOferta.js";
 //end componentes///
 ///start Json///
 import NovedadesJson from "../../util/Novedades.json";
@@ -99,20 +100,12 @@ const Contenido = () => {
           })}
         </div>
         {/* ///end cards Novedades/// */}
-        {/* ///start cards Oferta/// */}
-        <div className="row d-flex justify-content-center">
-          <small className="text-black text-Anton fs-2  text-center">
-            Descuentos Imperdibles
-          </small>
-          {OfertasJson.map((oferta) => {
-            return (
-              <div className="col-auto pb-3 d-flex justify-content-center">
-                <CardsOfertas key={oferta.id} props={oferta} />
-              </div>
-            );
-          })}
-        </div>
+        <small className="text-black text-Anton fs-2  text-center">
+          Precios Invatibles
+        </small>
+        {/* ///start carusel de Oferta/// */}
 
+        <CaruselOferta />
         {/* ///end cards Oferta/// */}
       </div>
     </div>
